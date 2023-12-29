@@ -9,6 +9,12 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
     </head>
     <body>
+        <div id="nav_table">
+          <a href="" class="link" id="header_about">About</a>
+          <a href="" class="link" id="header_why">Why</a>
+          <a href="" class="link" id="header_blog">Blog</a>
+          <a href="" class="link" id="header_contact">Contact</a>
+        </div>
         <header>
             <div class="logo">
                 <svg id="img__logo--header" data-name="logo_header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 229.49 41.51">
@@ -27,27 +33,21 @@
                 <a href="" class="link" id="header_blog">Blog</a>
                 <a href="" class="link" id="header_contact">Contact</a>
             </div>
-            <div id="hamburger_icon">
+            <div id="button__hamburger">
                 <span class="stick stick--1"></span>
                 <span class="stick stick--2"></span>
                 <span class="stick stick--3"></span>
-            </div>
-            <div id="nav_table">
-              <a href="" class="link" id="header_about">About</a>
-              <a href="" class="link" id="header_why">Why</a>
-              <a href="" class="link" id="header_blog">Blog</a>
-              <a href="" class="link" id="header_contact">Contact</a>
             </div>
             <div id="debugger"></div>
         </header>
         <main>
             <section id="introduction">
-                <div class="glass large_glass">
-                    <div class="glass medium_glass">
-                        <h1 class="title">Let your words be the bridge that connects souls.</h1>
-                        <p class="content">Immerse yourself in the experience of letter writing with authenticity and discover the magical sensation as your words become a bridge, linking the hidden depths of hearts.</p>
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2800 2000.51" id="img__write_on_laptop">
+                <div id="large_glass">
+                  <div id="medium_glass">
+                    <h1 id="medium_glass__title">Let your words be the bridge that connects souls.</h1>
+                    <p id="medium_glass__content">Immerse yourself in the experience of letter writing with authenticity and discover the magical sensation as your words become a bridge, linking the hidden depths of hearts.</p>
+                  </div>
+                  <svg id="img__write_on_laptop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2800 2000.51">
                         <defs>
                           <style>
                             .cls-1 {
@@ -974,7 +974,7 @@
                             </g>
                           </g>
                         </g>
-                    </svg>
+                  </svg>
                 </div>  
             </section>
             <section id="letter">
@@ -985,9 +985,9 @@
                         <p class="content" id="paragraph_2">Writing is a powerful way to slow down and see things more clearly. Try writing something for your future self or expressing feelings for someone special that you wouldn't normally share. In our busy lives, taking a moment to write becomes a way to pause, reflect, and reconnect with ourselves and others.</p>
                         <p class="content" id="paragraph_3">Best regards,</p>
                     </div>
-                    <div class="letter__button">
-                        <svg id="letter__button--icon_pencil" viewBox="0 0 325 325.37515" xmlns="http://www.w3.org/2000/svg"><path d="m114.6875 284.675781-73.800781-73.800781 178.5-178.5 73.800781 73.800781zm-80.699219-60.800781 67.699219 67.699219-101.5 33.800781zm281.898438-140.300781-12.800781 12.800781-73.898438-73.898438 12.800781-12.800781c12.894531-12.902343 33.804688-12.902343 46.699219 0l27.199219 27.199219c12.800781 12.9375 12.800781 33.765625 0 46.699219zm0 0"/></svg>
-                        <a id="letter__button--text">Write</a>
+                    <div id="button_in_letter">
+                        <svg id="button_in_letter__icon_pencil" viewBox="0 0 325 325.37515" xmlns="http://www.w3.org/2000/svg"><path d="m114.6875 284.675781-73.800781-73.800781 178.5-178.5 73.800781 73.800781zm-80.699219-60.800781 67.699219 67.699219-101.5 33.800781zm281.898438-140.300781-12.800781 12.800781-73.898438-73.898438 12.800781-12.800781c12.894531-12.902343 33.804688-12.902343 46.699219 0l27.199219 27.199219c12.800781 12.9375 12.800781 33.765625 0 46.699219zm0 0"/></svg>
+                        <a id="button_in_letter__label" href="">Write</a>
                     </div>
                 </div>
 
@@ -1164,16 +1164,16 @@
                     </defs>
                 </svg>                    
             </section>
-            <section id="content_about_us">
-                <div class="header">
+            <section id="about_us">
+                <div id="about_us__header">
                     <h1 class="title">About apollon</h1>
-                    <h3 class="text">Journey into Healing: Write, Connect, Thrive.</h3>
+                    <h3 class="subtitle">Journey into Healing: Write, Connect, Thrive.</h3>
                 </div>
                 <img id="img__team_discussion" src="img/img__team_discussion.svg" alt="">
-                <article class="content" id="about--pr1">
+                <article class="about_us__content" id="about_us__pr_1">
                     Welcome to Apollon - a sanctuary for the soul, a place where words become the remedy. Our journey began with a simple belief: that the power of a heartfelt letter can transcend distances and heal spirits.
                 </article>
-                <div class="sub_section">
+                <div class="about_us__sub_section">
                     <svg id="img__depressed_woman" viewBox="0 0 500 216" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_491_1901)">
                         <g id="&#38;lt;Layer&#38;gt;">
@@ -1298,7 +1298,7 @@
                         </clipPath>
                         </defs>
                     </svg>                        
-                    <article class="content" id="about--pr2">
+                    <article class="about_us__content" id="about_us__pr_2">
                         We acknowledge that an increasing number of people are regularly experiencing stress and symptoms of depression. Writing is recognized as one of the therapeutic approaches to aid in recovery, often recommended by mental health professionals. Our aim is to encourage people to cultivate the habit of writing and engaging in introspective thinking.
                     </article>
                     <svg id="img__background--about_us" viewBox="0 0 1440 680" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1330,11 +1330,11 @@
                 </svg>                    
                 <div class="header">
                     <h2 class="title">Letters of Love and Inspiration</h2>
-                    <h3 class="text">Sharing Heartfelt Words to Illuminate Souls.</h3>
+                    <h3 class="subtitle">Sharing Heartfelt Words to Illuminate Souls.</h3>
                 </div>
                 <div class="letter">
-                    <div class="arrow">
-                        <svg version="1.1" id="icon__left-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <div class="arrow_container">
+                        <svg version="1.1" id="icon__left_arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 512.009 512.009" style="enable-background:new 0 0 512.009 512.009;" xml:space="preserve">
                             <g>
                                 <path d="M500.373,244.083H39.689l96.465-96.465c4.563-4.531,4.589-11.903,0.058-16.465c-4.531-4.563-11.903-4.589-16.465-0.058
@@ -1346,12 +1346,13 @@
                     </div>
                     <div id="card-wrapper">
                         <div class="card" id="card-1">
-                            <div class="text" id="text-card-1">
-                                <p>Lorem ipsum, dolor sit amet</p></div>
-                            <div class="button-read-more" id="btn-card-1">Read more</div>
+                            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facere quaerat enim veritatis iusto magnam minima ad numquam minus temporibus, magni impedit sapiente consequuntur earum rem inventore sint fuga asperiores ipsa quo illo aspernatur et. Dolore, cum! Asperiores, aperiam in.</p>
+                            <div class="button_expand" id="button_expand__card_1">
+                              <span class="button_expand__label">Read more</span>
+                            </div>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100" class="icon__quote" id="quote-1">
                                 <path d="M23.2059 46.3144V54.364H43.3165V97.6794H0V54.364H0.00104696V46.3144C0.00104696 29.9687 4.704 17.8313 13.9801 10.2372C20.3969 4.98403 28.5192 2.32056 38.122 2.32056V25.5244C32.9091 25.5244 23.2059 25.5244 23.2059 46.3144ZM94.806 25.5244V2.32056C85.2038 2.32056 77.0815 4.98403 70.6647 10.2372C61.3886 17.8313 56.6851 29.9692 56.6851 46.3144V54.364V97.6794H100V54.364H79.8894V46.3144C79.89 25.5244 89.5932 25.5244 94.806 25.5244Z" fill="black" fill-opacity="0.1"/>
-                              </svg>
+                            </svg>
                         </div>
                         <div class="card" id="card-2">
                             <div class="text" id="text-card-2"></div>
@@ -1375,7 +1376,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="arrow">
+                    <div class="arrow_container">
                         <svg version="1.1" id="icon__right_arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	                    viewBox="0 0 512.009 512.009" style="enable-background:new 0 0 512.009 512.009;" xml:space="preserve">
 	                        <g>
@@ -1388,12 +1389,12 @@
                     </div>
                 </div>
             </section>
-            <section id="content_why_letter">
-                <div class="header">
+            <section id="why">
+                <div class="why__header">
                     <h1 class="title">Why letter?</h1>
-                    <h3 class="text">Write. Connect. Transform</h3>
+                    <h3 class="subtitle">Write. Connect. Transform</h3>
                 </div>
-                <div id="sub-section-1">
+                <div id="subsection_1">
                     <svg id="img__mental-health" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_493_2002)">
                         <g id="object">
@@ -1599,7 +1600,7 @@
                     Writing is a sacred act of self-discovery and a bridge that spans the distances between hearts. Each letter is a small masterpiece, a captured moment of vulnerability and sincerity.
                     </p>
                 </div>
-                <div id="sub-section-2">
+                <div id="subsection_2">
                     <svg id="img__long_hair_woman" viewBox="0 0 750 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_494_2159)">
                         <g id="object">

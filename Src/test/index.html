@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face{
+            font-family: 'inter';
+            src: url(Inter-Regular.ttf);
+        }
+        :root{
+            --w-icon: 24px;
+            --gap: 8px;
+            --h-button: 50px;
+        }
+        html{
+            font-size: 100%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .button{
+            width: 168px;
+            height: 60px;
+            border-radius: 20px;
+            background: #86ceeb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+        }
+        #icon__pencil{
+            width: 30px;
+            height: 30px;
+        }
+        #label{
+            font-family: 'inter';
+            font-size: 25px;
+            color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="button">
+        <svg id="icon__pencil" viewBox="0 0 325 325.37515" xmlns="http://www.w3.org/2000/svg"><path d="m114.6875 284.675781-73.800781-73.800781 178.5-178.5 73.800781 73.800781zm-80.699219-60.800781 67.699219 67.699219-101.5 33.800781zm281.898438-140.300781-12.800781 12.800781-73.898438-73.898438 12.800781-12.800781c12.894531-12.902343 33.804688-12.902343 46.699219 0l27.199219 27.199219c12.800781 12.9375 12.800781 33.765625 0 46.699219zm0 0"/></svg>
+        <span id="label">Write</span>
+    </div>
+    <script>
+        const text = document.querySelector("#label");
+        const specifi = text.getBoundingClientRect();
+        const w = specifi.width;
+        console.log(w);
+
+    </script>
+</body>
+</html>
