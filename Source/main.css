@@ -12,6 +12,30 @@
     src: url(Font/tesla.ttf);
 }
 
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url(Font/JetBrainsMono-Regular.ttf);
+}
+
+:root {
+    --color1: #00DDFA;
+    --color2: white;
+    --color3: rgb(244,244,248);
+    --color4: #C8F2F7;
+    --color5: #43554B;
+    --color6: #262D29;
+    --color7: #000000;
+    --color8: #89EAF7;
+    /*background_color1*/
+    --color9: #00707C; 
+    /*background_color2 */
+    --color10: #6EC1D6;
+    /* font-color */
+    --color11:#FFFFFF;
+    --color12: #87CEFA;
+    --word_color: white;
+}
+
 html {
     font-size: 100%;
     margin: 0;
@@ -20,27 +44,18 @@ html {
 body {
     margin: 0;
     max-width: 100vw;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color10);
 }
 
 * {
     box-sizing: border-box;
 }
 
-.grid__container {
-    display: grid;
-    grid-template-areas:
-        "section1"
-        "section2"
-        "section3";
-    grid-template-rows: 12.5vh auto 25vh;
-
-}
-
 header {
     height: 12.5vh;
-    width:100%;
-    background-color: lightpink;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
     position: fixed;
     display: grid;
     grid-template-areas: "h1 h2 h3 h4";
@@ -52,7 +67,7 @@ header {
 
 header a {
     text-decoration: none;
-    color: white;
+    color: var(--word_color);
     line-height: 12.5vh;
 }
 
@@ -70,49 +85,177 @@ header #header_about_us {
 
 }
 
+header #header_about_us:hover {
+    color: var(--color8);
+}
+
 header #header_why_letter {
     grid-area: h3;
+}
 
+header #header_why_letter:hover {
+    color: var(--color8);
 }
 
 main{
     grid-area: section2;
-    padding: 0 2vw 0 2vw;
     display: grid;
     grid-template-areas: 
-    "s1 s1 s1 s1 s1 s1 s1 s1"
-    "s2 s2 s2 s2 s2 s2 s2 s2"
-    "s3 s3 s3 s3 s3 s3 s3 s3"
-    "s4 s4 s4 s4 s4 s4 s4 s4";
-    grid-template-rows: repeat(4,100vh);
+    "s1"
+    "s2"
+    "s3"
+    "s4"
+    "s5";
+    grid-template-rows: repeat(5,100vh);
+    row-gap: 50px;
 }
 
 main .title {
     font-family: 'Nunito';
     font-size: 4rem;
-
 }
 
 main .content {
     font-family: 'Inter';
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 main #introduction {
+    color: var(--color11);
     grid-area: s1;
+    grid-template-columns: repeat(8,1fr);
+    background-color: var(--color12);
+    border-radius: 0 0 4vw 4vw;
+    display: relative;
+}
+
+#introduction .title {
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+#introduction .content {
+    width: 60%;
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    line-height: 35px;
 }
 
 main #letter {
+    margin: 0 1vw 0 1vw;
+    position: relative;
     grid-area: s2;
-    display: flex;
+    background-color: #76E8F9;
+    backdrop-filter: blur(10px);
+    padding: 20px 20px;
+    align-items: center;
+    border-radius: calc(4vw + 20px);
+}
+
+#letter .content__container {
+    width: 75%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4vw;
+    padding: 2vw 4vw 2vw 4vw;
+    overflow:hidden;
+}
+.content__container .content {
+    font-size: 1rem;
+    font-family: 'JetBrains Mono' !important;
+    line-height: 30px;
+}
+
+#letter .button {
+    width: 15%;
+    height: 50px;
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    border-radius: 100px;
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+#letter .button:hover {
+    background-color: black;
+    color: white;
 }
 
 main #content_about_us {
     grid-area: s3;
+    font-family: 'Nunito';
+    background-color: white;
+    border-radius: 4vw;
+    margin: 0 1vw;
+    padding: 5%;
+}
+
+#content_about_us .title {
+    margin: 0;
+}
+
+#content_about_us .text {
+    margin: 0 0 0 2%;
+
+}
+#content_about_us .content {
+    padding: 5%;
+    line-height: 35px;
+}
+
+main #public_letter {
+    grid-area: s4;
+    margin: 0 1vw;
+    display: flex;
+}
+
+#public_letter .header {
+    width: 40%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+#public_letter .header .title {
+    margin: 0;
+    text-align: center;
+}
+
+#public_letter .header .text {
+    margin: 0 0 0 2%;
+    text-align: center;
+}
+
+#public_letter .letter {
+    width: 60%;
+    background-color: white;
+    border-radius: 4vw;
 }
 
 main #content_why_letter {
-    grid-area: s4;
+    grid-area: s5;
+    background-color: white;
+    border-radius: 4vw 4vw 0 0;
+    padding: 5%;
+}
+
+#content_why_letter .title {
+    margin: 0;
+}
+
+#content_why_letter .text {
+    margin: 0 0 0 2%;
+}
+
+#content_why_letter .content{
+    padding: 5%;
+    line-height: 35px;
+
 }
 footer {
     display: grid;
@@ -122,7 +265,7 @@ footer {
     "footer-row1"
     "footer-row2";
     grid-template-rows: 12.5vh 12.5vh;
-    background-color: lightgreen;
+    background-color: rgba(0,0,0,0.9);
 }
 
 footer #information {
@@ -135,7 +278,7 @@ footer #information {
 
 footer #information a {
     text-decoration: none;
-    color: black;
+    color: var(--word_color);
 }
 
 footer #license {
@@ -143,10 +286,11 @@ footer #license {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--word_color);
 }
 #information #footer_logo {
     font-family: 'tesla';
     font-size: 2.5rem;
-    color: black;
+    color: var(--word_color);
     letter-spacing: 6px;
 }

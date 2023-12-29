@@ -1,0 +1,59 @@
+:root{
+    --distanceToMove: 0;
+    --heightOfMouse: 0;
+    --widthOfDot: 0;
+    --borderOfMouse: 0;
+    --sizeOfDot: 0;
+    --marginOfDot: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightpink;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.mouse{
+    position: relative;
+    width: 100px;
+    height: 200px;
+    border-radius: 100px;
+    border: 10px solid white;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.dot{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 20px;
+    animation: 2.7s ease-in-out infinite drop;
+}
+
+@keyframes drop{
+    20%, 30%{
+        transform: translate3d(0, -50%, 0); 
+        opacity: 1;
+    }
+
+    50%, 70%{
+        transform: translate3d(0, 130px, 0);
+        opacity: 0.8;
+    }
+    100%{
+        transform: translate3d(0, 130px, 0);
+        opacity: 0;
+    }
+}

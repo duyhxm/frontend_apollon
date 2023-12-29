@@ -1,0 +1,41 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: calc(100vh - 20px);
+    margin: 10px;
+    border-radius: 30px;
+    background-color: #86ceeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#text {
+
+}
+.effect {
+
+}
+.transform-text {
+    list-style-type: none;
+
+}
+
+.item {
+    font-size: 30px;
+    font-weight: 700;
+
+}
