@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
     </head>
     <body>
+        <span id="template_text">Contact</span>
         <div id="nav_table">
           <a href="" class="link" id="header_about">About</a>
           <a href="" class="link" id="header_why">Why</a>
@@ -16,8 +17,8 @@
           <a href="" class="link" id="header_contact">Contact</a>
         </div>
         <header>
-            <div class="logo">
-                <svg id="img__logo--header" data-name="logo_header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 229.49 41.51">
+            <div id="logo_container">
+                <svg id="img__logo--header" data-name="img__logo--header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 229.49 41.51">
                     <path d="M14.19,32.11c-2.7,0-5.12-.5-7.26-1.49-2.14-1-3.84-2.34-5.07-4.05-1.24-1.7-1.86-3.63-1.86-5.79s.67-4.09,2.02-5.81c1.35-1.72,3.18-3.07,5.49-4.07,2.31-.99,4.91-1.49,7.79-1.49s5.47,.5,7.76,1.49c2.29,1,4.11,2.35,5.46,4.07,1.35,1.72,2.02,3.65,2.02,5.81h-2.16c0,2.15-.62,4.08-1.86,5.79-1.24,1.7-2.93,3.05-5.07,4.05-2.14,1-4.57,1.49-7.26,1.49Zm1.11-3.68c1.89,0,3.57-.33,5.05-1,1.48-.67,2.64-1.58,3.49-2.74,.85-1.16,1.28-2.46,1.28-3.91s-.43-2.79-1.28-3.95c-.85-1.16-2.02-2.07-3.49-2.74-1.48-.67-3.16-1-5.05-1s-3.52,.33-5.02,1c-1.5,.67-2.68,1.58-3.55,2.74-.87,1.16-1.3,2.47-1.3,3.95s.43,2.75,1.3,3.91c.87,1.16,2.05,2.07,3.55,2.74,1.5,.67,3.17,1,5.02,1Zm12.42,3.56c-.81,0-1.49-.2-2.02-.59-.54-.4-.8-.89-.8-1.49v-6.26l1.05-4.33,4.6,1.47v9.12c0,.6-.27,1.1-.8,1.49-.54,.4-1.21,.59-2.02,.59Z"/>
                     <path d="M44.58,41.51c-.81,0-1.49-.2-2.02-.59-.54-.4-.8-.89-.8-1.49V20.78c.04-2.15,.72-4.09,2.05-5.81,1.33-1.72,3.14-3.07,5.43-4.07,2.29-.99,4.88-1.49,7.76-1.49s5.53,.5,7.82,1.49c2.29,1,4.11,2.35,5.46,4.07,1.35,1.72,2.02,3.65,2.02,5.81s-.62,4.08-1.86,5.79c-1.24,1.7-2.93,3.05-5.07,4.05-2.14,1-4.57,1.49-7.26,1.49-2.18,0-4.19-.33-6.02-1-1.83-.67-3.39-1.57-4.69-2.72v11.04c0,.6-.26,1.1-.78,1.49-.52,.39-1.2,.59-2.05,.59Zm12.42-13.09c1.89,0,3.57-.33,5.05-1,1.48-.67,2.65-1.58,3.52-2.74,.87-1.16,1.3-2.46,1.3-3.91s-.44-2.79-1.3-3.95c-.87-1.16-2.04-2.07-3.52-2.74-1.48-.67-3.16-1-5.05-1s-3.52,.33-5.02,1c-1.5,.67-2.67,1.58-3.52,2.74-.85,1.16-1.28,2.47-1.28,3.95s.42,2.75,1.28,3.91c.85,1.16,2.02,2.07,3.52,2.74,1.5,.67,3.17,1,5.02,1Z"/>
                     <path d="M97.25,32.11c-2.99,0-5.64-.48-7.93-1.45-2.29-.97-4.09-2.3-5.41-4.01-1.31-1.7-1.97-3.66-1.97-5.87s.66-4.21,1.97-5.91c1.31-1.7,3.11-3.04,5.41-4.01,2.29-.97,4.93-1.45,7.93-1.45s5.58,.48,7.87,1.45c2.29,.97,4.09,2.3,5.41,4.01,1.31,1.7,1.97,3.67,1.97,5.91s-.65,4.17-1.94,5.87c-1.29,1.7-3.09,3.04-5.38,4.01-2.29,.97-4.93,1.45-7.93,1.45Zm0-3.68c1.92,0,3.62-.33,5.1-.98,1.48-.65,2.63-1.55,3.47-2.7,.83-1.15,1.25-2.47,1.25-3.97s-.42-2.83-1.25-3.99c-.83-1.16-1.99-2.07-3.47-2.72-1.48-.65-3.18-.98-5.1-.98s-3.62,.33-5.1,.98c-1.48,.65-2.64,1.56-3.49,2.72-.85,1.16-1.27,2.49-1.27,3.99s.42,2.82,1.27,3.97c.85,1.15,2.01,2.04,3.49,2.7,1.48,.65,3.18,.98,5.1,.98Z"/>
@@ -977,30 +978,35 @@
                   </svg>
                 </div>  
             </section>
-            <section id="letter">
-                <div class="letter__wrapper">
+            <section id="letter_section">
+                <div id="letter_section__wrapper">
+                    <div class="content__container--template">
+                        <p class="content--template" id="paragraph_0--template">Dear you, </p>
+                        <p class="content--template" id="paragraph_1--template">When was the last time you wrote a letter? In today's fast-paced world, technology has made things quicker, including how we communicate. While it's more convenient, it also means we think and feel less. We may even forget to ask ourselves important questions about who we are and our purpose in life.</p>
+                        <p class="content--template" id="paragraph_2--template">Writing is a powerful way to slow down and see things more clearly. Try writing something for your future self or expressing feelings for someone special that you wouldn't normally share. In our busy lives, taking a moment to write becomes a way to pause, reflect, and reconnect with ourselves and others.</p>
+                        <p class="content--template" id="paragraph_3--template">Best regards,</p>
+                    </div>
                     <div class="content__container">
-                        <p class="content" id="paragraph_0">Dear you, </p>
-                        <p class="content" id="paragraph_1">When was the last time you wrote a letter? In today's fast-paced world, technology has made things quicker, including how we communicate. While it's more convenient, it also means we think and feel less. We may even forget to ask ourselves important questions about who we are and our purpose in life.</p>
-                        <p class="content" id="paragraph_2">Writing is a powerful way to slow down and see things more clearly. Try writing something for your future self or expressing feelings for someone special that you wouldn't normally share. In our busy lives, taking a moment to write becomes a way to pause, reflect, and reconnect with ourselves and others.</p>
-                        <p class="content" id="paragraph_3">Best regards,</p>
+                        <p class="content" id="paragraph_0"></p>
+                        <p class="content" id="paragraph_1"></p>
+                        <p class="content" id="paragraph_2"></p>
+                        <p class="content" id="paragraph_3"></p>
                     </div>
                     <div id="button_in_letter">
                         <svg id="button_in_letter__icon_pencil" viewBox="0 0 325 325.37515" xmlns="http://www.w3.org/2000/svg"><path d="m114.6875 284.675781-73.800781-73.800781 178.5-178.5 73.800781 73.800781zm-80.699219-60.800781 67.699219 67.699219-101.5 33.800781zm281.898438-140.300781-12.800781 12.800781-73.898438-73.898438 12.800781-12.800781c12.894531-12.902343 33.804688-12.902343 46.699219 0l27.199219 27.199219c12.800781 12.9375 12.800781 33.765625 0 46.699219zm0 0"/></svg>
                         <a id="button_in_letter__label" href="">Write</a>
                     </div>
                 </div>
-
-                <svg class="blob" id="blob-1" viewBox="0 0 266 347" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="letter_section__blob" id="letter_section__blob_1" viewBox="0 0 266 347" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M120.926 14.0648C154.662 24.9422 183.684 43.1783 208.351 66.135C233.988 89.9946 260.78 115.967 265.4 148.524C269.999 180.937 247.102 209.987 233.053 240.23C218.27 272.054 212.634 310.116 180.961 330.296C148.867 350.744 105.583 346.637 65.9365 346.707C26.0286 346.777 -15.4402 348.325 -49.9389 330.703C-85.2166 312.682 -111.308 282.498 -125.535 248.9C-139.259 216.488 -133.527 181.462 -127.61 147.273C-121.71 113.181 -116.578 77.4503 -91.2988 51.0676C-65.8116 24.4673 -27.746 9.29767 11.0773 2.52858C47.9964 -3.9085 85.5919 2.6721 120.926 14.0648Z" fill="white" fill-opacity="0.2"/>
                 </svg>
-                <svg class="blob" id="blob-2" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="letter_section__blob" id="letter_section__blob_2" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M276.02 0.55261C354.414 -4.01308 437.941 19.746 481.104 70.5915C521.259 117.893 487.195 176.41 472.351 231.826C456.859 289.661 462.773 361.27 395.694 389.451C327.06 418.285 247.896 381.622 177.298 355.782C105.761 329.598 18.5211 305.431 2.36181 245.484C-13.6398 186.122 55.0547 138.292 106.307 92.4198C153.812 49.9013 203.59 4.77095 276.02 0.55261Z" fill="white" fill-opacity="0.2"/>
                 </svg>
-                <svg class="blob" id="blob-3" viewBox="0 0 600 570" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="letter_section__blob" id="letter_section__blob_3" viewBox="0 0 600 570" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M298.09 0.00784015C396.243 -0.547526 497.144 28.3555 555.804 101.567C612.641 172.503 607.333 267.833 580.741 352.778C556.311 430.819 499.216 494 421.389 530.947C340.976 569.123 246.403 586.169 164.801 550.243C82.6312 514.067 38.4622 434.613 16.2878 352.597C-6.65448 267.742 -11.8434 174.678 44.2761 104.462C102.351 31.7982 200.759 0.558555 298.09 0.00784015Z" fill="white" fill-opacity="0.2"/>
                 </svg>
-                <svg class="blob" id="blob-4" viewBox="0 0 700 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="letter_section__blob" id="letter_section__blob_4" viewBox="0 0 700 680" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_78_916)">
                     <path opacity="0.25" d="M253.523 655.079C403.415 711.562 610.174 668.606 687.221 560.843C691.756 554.499 696.009 547.922 700.003 541.139V112.881C699.632 111.878 699.267 110.875 698.889 109.873C679.053 57.1412 641.452 21.2719 592.595 0H301.058C287.01 3.99197 272.922 8.43523 258.849 13.3409C87.3237 73.1369 -36.5531 211.527 9.80156 396.698C50.3206 558.572 165.453 621.889 253.523 655.076V655.079Z" fill="white" fill-opacity="0.7"/>
                     </g>
@@ -1010,7 +1016,7 @@
                     </clipPath>
                     </defs>
                 </svg>
-                <svg class="blob" id="blob-5" viewBox="0 0 700 580" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="letter_section__blob" id="letter_section__blob_5" viewBox="0 0 700 580" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_78_924)">
                     <path style="mix-blend-mode:multiply" opacity="0.25" d="M490.642 579.573C647.557 574.924 712.99 424.468 697.884 254.293C688.696 150.796 639.01 55.0556 548.571 0H169.902C130.664 23.2696 100.937 51.6652 77.6963 77.6461C-15.7583 182.106 -27.5973 358.669 56.8617 449.112C141.321 539.555 309.807 584.931 490.642 579.573Z" fill="white" fill-opacity="0.7"/>
                     </g>
@@ -1021,7 +1027,7 @@
                     </defs>
                 </svg>
                 <svg id="img__reading_letter" viewBox="0 0 550 310" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="reading_letter" clip-path="url(#clip0_490_1784)">
+                    <g clip-path="url(#clip0_490_1784)">
                     <g id="Clip path group">
                     <mask id="mask0_490_1784" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="550" height="310">
                     <g id="clip0_75_770">
@@ -1173,7 +1179,7 @@
                 <article class="about_us__content" id="about_us__pr_1">
                     Welcome to Apollon - a sanctuary for the soul, a place where words become the remedy. Our journey began with a simple belief: that the power of a heartfelt letter can transcend distances and heal spirits.
                 </article>
-                <div class="about_us__sub_section">
+                <div id="about_us__sub_section">
                     <svg id="img__depressed_woman" viewBox="0 0 500 216" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_491_1901)">
                         <g id="&#38;lt;Layer&#38;gt;">
@@ -1302,7 +1308,7 @@
                         We acknowledge that an increasing number of people are regularly experiencing stress and symptoms of depression. Writing is recognized as one of the therapeutic approaches to aid in recovery, often recommended by mental health professionals. Our aim is to encourage people to cultivate the habit of writing and engaging in introspective thinking.
                     </article>
                     <svg id="img__background--about_us" viewBox="0 0 1440 680" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_495_2331)">
+                        <g id="inner_object" clip-path="url(#clip0_495_2331)">
                         <g id="Clip path group">
                         <mask id="mask0_495_2331" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="680">
                         <g id="clip0_88_2608">
@@ -1322,19 +1328,19 @@
                         </clipPath>
                         </defs>
                     </svg>                                       
-                </div>
+                  </div>
             </section>
             <section id="public_letter">
                 <svg id="img__tangled_lines" viewBox="0 0 502 502" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M152.307 101.047C125.962 204.732 108.84 434.316 196.235 487.665C246.101 518.091 336.379 505.803 391.087 350.777C468.624 131 331.19 67.9028 267.835 96.4974C176.692 137.558 186.55 344.337 277.981 369.86C318.104 381.085 361.629 353.613 380.076 315.388C408.209 257.077 379.788 176.61 320.698 152.801C261.609 128.991 185.628 170.938 175.021 235.099C164.356 299.2 225.751 365.429 288.415 355.267C426.022 333.053 420.027 75.2287 277.635 56.5595C193.237 45.5115 129.939 135.726 167.123 214.185C196.466 276.159 286.916 294.238 338.8 250.46C390.684 206.681 392.471 115.462 344.45 67.2529C296.428 19.0437 210.474 20.9934 162.338 69.0253C114.144 117.057 108.667 202.073 147.58 258.258C216.182 357.335 363.877 333.585 381.518 240.475C399.792 143.761 233.476 7.22776 136.454 67.9028C-10.0311 159.595 170.466 431.244 353.327 333.821C420.718 297.901 450.234 213.298 415.127 144.234C355.46 26.9604 178.307 69.8524 177.615 203.964C176.923 326.614 333.323 377.245 378.462 291.166C413.628 224.051 332.747 77.0011 239.529 83.0272C104.516 91.712 99.1551 335.121 263.972 371.278C336.667 387.229 417.49 343.215 445.219 272.555C473.006 201.896 444.527 112.744 381.345 72.6292C297.235 19.221 213.53 77.001 224.31 144.293C238.664 233.799 400.369 245.379 457.095 152.092C483.094 109.377 477.156 46.2205 437.898 15.9125C398.639 -14.3955 330.844 3.91926 318.046 52.542C329.98 56.4413 345.199 52.4239 359.553 45.2161C382.843 33.5774 372.467 -1.98875 346.755 1.20157C270.948 10.7134 206.439 71.6839 196.005 154.455C183.207 255.954 263.338 316.215 325.195 288.034C398.178 254.831 383.362 134.486 290.836 120.425C223.618 110.204 159.917 180.627 167.353 249.869C174.732 319.11 242.642 372.519 310.552 370.805C455.135 367.261 511.227 179.387 399.331 96.0839C295.679 18.9256 148.675 114.694 181.708 241.893C212.78 361.53 371.256 370.51 413.57 262.866C458.536 148.429 322.312 14.5536 163.26 96.8519C-11.4724 187.244 68.3708 384.216 202.346 396.269C374.83 411.807 464.647 161.663 339.492 94.6069C295.967 71.2704 238.607 87.6945 206.093 125.387C156.458 182.99 166.489 281.654 223.215 331.872C344.565 439.279 543.452 309.244 492.952 125.092C467.125 30.8597 385.783 -26.0933 273.311 20.5798C128.21 80.7821 119.678 228.6 201.02 278.05C273.6 322.123 357.882 235.867 321.275 189.194C306.574 170.465 251.866 159.477 234.975 259.971M234.975 259.971C396.621 74.4606 423.082 113.631 234.975 259.971ZM234.975 259.971C246.678 249.396 256.824 233.563 266.624 216.311C275.214 201.187 253.077 187.421 244.199 202.309C227.077 231.081 218.43 265.111 221.774 298.669C459.574 169.993 197.561 -43.8172 144.87 255.6C150.462 221.097 142.564 185.472 125.27 155.459C89.4702 93.0708 -6.74516 124.088 1.49857 195.988C8.1858 254.536 78.2865 263.221 116.738 217.434C140.547 189.135 148.272 150.319 156.631 114.28C150.712 110.302 144.774 106.344 138.817 102.405C89.182 142.462 62.5484 210.758 72.0027 274.859C125.731 299.2 196.639 253.591 198.599 193.448C241.489 210.876 294.929 180.686 307.612 135.254C320.295 89.7623 294.238 37.8902 252.5 17.6258C180.036 -17.5268 86.0113 39.0127 82.5523 116.821C78.9205 197.406 171.908 226.65 202.98 169.875C216.47 145.238 208.63 113.04 184.129 100.101C144.582 79.2461 104.055 126.392 107.975 168.398C113.625 229.486 202.807 309.185 252.673 316.806C289.914 322.537 334.649 296.128 328.308 253.827C325.31 233.74 311.186 217.434 292.969 209.517C223.964 179.505 140.028 270.488 140.777 345.165C141.757 440.933 250.598 463.029 285.994 391.601C325.541 311.844 225.117 235.808 170.409 290.752C145.043 316.215 151.327 368.206 184.302 381.676C214.856 386.343 241.893 348.768 230.94 319.169C219.986 289.57 179.114 278.463 153.575 296.187C128.037 313.911 121.638 353.613 137.722 380.613C169.602 434.257 255.901 425.927 284.956 352.786" stroke="#E7DFDF" stroke-miterlimit="10"/>
+                    <path d="M152.307 101.047C125.962 204.732 108.84 434.316 196.235 487.665C246.101 518.091 336.379 505.803 391.087 350.777C468.624 131 331.19 67.9028 267.835 96.4974C176.692 137.558 186.55 344.337 277.981 369.86C318.104 381.085 361.629 353.613 380.076 315.388C408.209 257.077 379.788 176.61 320.698 152.801C261.609 128.991 185.628 170.938 175.021 235.099C164.356 299.2 225.751 365.429 288.415 355.267C426.022 333.053 420.027 75.2287 277.635 56.5595C193.237 45.5115 129.939 135.726 167.123 214.185C196.466 276.159 286.916 294.238 338.8 250.46C390.684 206.681 392.471 115.462 344.45 67.2529C296.428 19.0437 210.474 20.9934 162.338 69.0253C114.144 117.057 108.667 202.073 147.58 258.258C216.182 357.335 363.877 333.585 381.518 240.475C399.792 143.761 233.476 7.22776 136.454 67.9028C-10.0311 159.595 170.466 431.244 353.327 333.821C420.718 297.901 450.234 213.298 415.127 144.234C355.46 26.9604 178.307 69.8524 177.615 203.964C176.923 326.614 333.323 377.245 378.462 291.166C413.628 224.051 332.747 77.0011 239.529 83.0272C104.516 91.712 99.1551 335.121 263.972 371.278C336.667 387.229 417.49 343.215 445.219 272.555C473.006 201.896 444.527 112.744 381.345 72.6292C297.235 19.221 213.53 77.001 224.31 144.293C238.664 233.799 400.369 245.379 457.095 152.092C483.094 109.377 477.156 46.2205 437.898 15.9125C398.639 -14.3955 330.844 3.91926 318.046 52.542C329.98 56.4413 345.199 52.4239 359.553 45.2161C382.843 33.5774 372.467 -1.98875 346.755 1.20157C270.948 10.7134 206.439 71.6839 196.005 154.455C183.207 255.954 263.338 316.215 325.195 288.034C398.178 254.831 383.362 134.486 290.836 120.425C223.618 110.204 159.917 180.627 167.353 249.869C174.732 319.11 242.642 372.519 310.552 370.805C455.135 367.261 511.227 179.387 399.331 96.0839C295.679 18.9256 148.675 114.694 181.708 241.893C212.78 361.53 371.256 370.51 413.57 262.866C458.536 148.429 322.312 14.5536 163.26 96.8519C-11.4724 187.244 68.3708 384.216 202.346 396.269C374.83 411.807 464.647 161.663 339.492 94.6069C295.967 71.2704 238.607 87.6945 206.093 125.387C156.458 182.99 166.489 281.654 223.215 331.872C344.565 439.279 543.452 309.244 492.952 125.092C467.125 30.8597 385.783 -26.0933 273.311 20.5798C128.21 80.7821 119.678 228.6 201.02 278.05C273.6 322.123 357.882 235.867 321.275 189.194C306.574 170.465 251.866 159.477 234.975 259.971M234.975 259.971C396.621 74.4606 423.082 113.631 234.975 259.971ZM234.975 259.971C246.678 249.396 256.824 233.563 266.624 216.311C275.214 201.187 253.077 187.421 244.199 202.309C227.077 231.081 218.43 265.111 221.774 298.669C459.574 169.993 197.561 -43.8172 144.87 255.6C150.462 221.097 142.564 185.472 125.27 155.459C89.4702 93.0708 -6.74516 124.088 1.49857 195.988C8.1858 254.536 78.2865 263.221 116.738 217.434C140.547 189.135 148.272 150.319 156.631 114.28C150.712 110.302 144.774 106.344 138.817 102.405C89.182 142.462 62.5484 210.758 72.0027 274.859C125.731 299.2 196.639 253.591 198.599 193.448C241.489 210.876 294.929 180.686 307.612 135.254C320.295 89.7623 294.238 37.8902 252.5 17.6258C180.036 -17.5268 86.0113 39.0127 82.5523 116.821C78.9205 197.406 171.908 226.65 202.98 169.875C216.47 145.238 208.63 113.04 184.129 100.101C144.582 79.2461 104.055 126.392 107.975 168.398C113.625 229.486 202.807 309.185 252.673 316.806C289.914 322.537 334.649 296.128 328.308 253.827C325.31 233.74 311.186 217.434 292.969 209.517C223.964 179.505 140.028 270.488 140.777 345.165C141.757 440.933 250.598 463.029 285.994 391.601C325.541 311.844 225.117 235.808 170.409 290.752C145.043 316.215 151.327 368.206 184.302 381.676C214.856 386.343 241.893 348.768 230.94 319.169C219.986 289.57 179.114 278.463 153.575 296.187C128.037 313.911 121.638 353.613 137.722 380.613C169.602 434.257 255.901 425.927 284.956 352.786" stroke-miterlimit="10"/>
                 </svg>                    
-                <div class="header">
+                <div id="public_letter__header">
                     <h2 class="title">Letters of Love and Inspiration</h2>
                     <h3 class="subtitle">Sharing Heartfelt Words to Illuminate Souls.</h3>
                 </div>
-                <div class="letter">
+                <div id="letter_carousel">
                     <div class="arrow_container">
-                        <svg version="1.1" id="icon__left_arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg id="icon__left_arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 512.009 512.009" style="enable-background:new 0 0 512.009 512.009;" xml:space="preserve">
                             <g>
                                 <path d="M500.373,244.083H39.689l96.465-96.465c4.563-4.531,4.589-11.903,0.058-16.465c-4.531-4.563-11.903-4.589-16.465-0.058
@@ -1344,40 +1350,47 @@
                             </g>
                         </svg>
                     </div>
-                    <div id="card-wrapper">
-                        <div class="card" id="card-1">
-                            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facere quaerat enim veritatis iusto magnam minima ad numquam minus temporibus, magni impedit sapiente consequuntur earum rem inventore sint fuga asperiores ipsa quo illo aspernatur et. Dolore, cum! Asperiores, aperiam in.</p>
+                    <div id="cards_wrapper">
+                        <div class="card" id="card_1">
+                            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facere quaerat enim veritatis iusto magnam minima ad numquam minus temporibus, magni impedit sapiente consequuntur earum rem inventore sint fuga asperiores ipsa quo illo aspernatur et. Dolore, cum! Asperiores, aperiam in.
+                            </p>
                             <div class="button_expand" id="button_expand__card_1">
                               <span class="button_expand__label">Read more</span>
                             </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100" class="icon__quote" id="quote-1">
+                            <svg class="icon__quote" id="quote_1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
                                 <path d="M23.2059 46.3144V54.364H43.3165V97.6794H0V54.364H0.00104696V46.3144C0.00104696 29.9687 4.704 17.8313 13.9801 10.2372C20.3969 4.98403 28.5192 2.32056 38.122 2.32056V25.5244C32.9091 25.5244 23.2059 25.5244 23.2059 46.3144ZM94.806 25.5244V2.32056C85.2038 2.32056 77.0815 4.98403 70.6647 10.2372C61.3886 17.8313 56.6851 29.9692 56.6851 46.3144V54.364V97.6794H100V54.364H79.8894V46.3144C79.89 25.5244 89.5932 25.5244 94.806 25.5244Z" fill="black" fill-opacity="0.1"/>
                             </svg>
                         </div>
-                        <div class="card" id="card-2">
-                            <div class="text" id="text-card-2"></div>
-                            <div class="button-read-more" id="btn-card-2"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100" class="icon__quote" id="quote-2">
+                        <div class="card" id="card_2">
+                            <p class="card__text"></p>
+                            <div class="button_expand" id="button_expand__card_2">
+                              <span class="button_expand__label">Read more</span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100" class="icon__quote" id="quote_2">
                                 <path d="M23.2059 46.3144V54.364H43.3165V97.6794H0V54.364H0.00104696V46.3144C0.00104696 29.9687 4.704 17.8313 13.9801 10.2372C20.3969 4.98403 28.5192 2.32056 38.122 2.32056V25.5244C32.9091 25.5244 23.2059 25.5244 23.2059 46.3144ZM94.806 25.5244V2.32056C85.2038 2.32056 77.0815 4.98403 70.6647 10.2372C61.3886 17.8313 56.6851 29.9692 56.6851 46.3144V54.364V97.6794H100V54.364H79.8894V46.3144C79.89 25.5244 89.5932 25.5244 94.806 25.5244Z" fill="black" fill-opacity="0.1"/>
                             </svg>
                         </div>
-                        <div class="card" id="card-3">
-                            <div class="text" id="text_card_3"></div>
-                            <div class="button-read-more" id="btn-card-3"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100" class="icon__quote" id="quote-3">
+                        <div class="card" id="card_3">
+                            <p class="card__text"></p>
+                            <div class="button_expand" id="button_expand__card_3">
+                              <span class="button_expand__label">Read more</span>
+                            </div>
+                            <svg class="icon__quote" id="quote_3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100" >
                                 <path d="M23.2059 46.3144V54.364H43.3165V97.6794H0V54.364H0.00104696V46.3144C0.00104696 29.9687 4.704 17.8313 13.9801 10.2372C20.3969 4.98403 28.5192 2.32056 38.122 2.32056V25.5244C32.9091 25.5244 23.2059 25.5244 23.2059 46.3144ZM94.806 25.5244V2.32056C85.2038 2.32056 77.0815 4.98403 70.6647 10.2372C61.3886 17.8313 56.6851 29.9692 56.6851 46.3144V54.364V97.6794H100V54.364H79.8894V46.3144C79.89 25.5244 89.5932 25.5244 94.806 25.5244Z" fill="black" fill-opacity="0.1"/>
                             </svg>
                         </div>
-                        <div class="card" id="card-4">
-                            <div class="text" id="text_card_4"></div>
-                            <div class="button-read-more" id="btn-card-4"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100" class="icon__quote" id="quote-4">
+                        <div class="card" id="card_4">
+                            <p class="card__text"></p>
+                            <div class="button_expand" id="button_expand__card_4">
+                              <span class="button_expand__label">Read more</span>
+                            </div>
+                            <svg class="icon__quote" id="quote_4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
                                 <path d="M23.2059 46.3144V54.364H43.3165V97.6794H0V54.364H0.00104696V46.3144C0.00104696 29.9687 4.704 17.8313 13.9801 10.2372C20.3969 4.98403 28.5192 2.32056 38.122 2.32056V25.5244C32.9091 25.5244 23.2059 25.5244 23.2059 46.3144ZM94.806 25.5244V2.32056C85.2038 2.32056 77.0815 4.98403 70.6647 10.2372C61.3886 17.8313 56.6851 29.9692 56.6851 46.3144V54.364V97.6794H100V54.364H79.8894V46.3144C79.89 25.5244 89.5932 25.5244 94.806 25.5244Z" fill="black" fill-opacity="0.1"/>
                             </svg>
                         </div>
                     </div>
                     <div class="arrow_container">
-                        <svg version="1.1" id="icon__right_arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg id="icon__right_arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	                    viewBox="0 0 512.009 512.009" style="enable-background:new 0 0 512.009 512.009;" xml:space="preserve">
 	                        <g>
 		                        <path d="M508.625,247.801L508.625,247.801L392.262,131.437c-4.18-4.881-11.526-5.45-16.407-1.269
@@ -1390,12 +1403,12 @@
                 </div>
             </section>
             <section id="why">
-                <div class="why__header">
+                <div id="why__header">
                     <h1 class="title">Why letter?</h1>
                     <h3 class="subtitle">Write. Connect. Transform</h3>
                 </div>
                 <div id="subsection_1">
-                    <svg id="img__mental-health" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg id="img__mental_health" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_493_2002)">
                         <g id="object">
                         <g id="back">
@@ -1596,7 +1609,7 @@
                         </clipPath>
                         </defs>
                     </svg>                        
-                    <p class="content" id="why-pr-1">
+                    <p class="content" id="why__pr_1">
                     Writing is a sacred act of self-discovery and a bridge that spans the distances between hearts. Each letter is a small masterpiece, a captured moment of vulnerability and sincerity.
                     </p>
                 </div>
@@ -1815,24 +1828,24 @@
                         </clipPath>
                         </defs>
                     </svg>                        
-                    <p class="content" id="why-pr-2">
+                    <p class="content" id="why__pr_2">
                     Letters heal. They are therapeutic expressions that invite reflection, inspire empathy, and weave a tapestry of shared experiences. Whether written to others or as a personal dialogue with oneself, each stroke of the pen releases emotions, fosters clarity, and sparks connections.
                     </p>
                 </div>
             </section>
         </main>
         <footer>
-            <img src="img/img__anonymous_people.svg" alt="" id="img__anonymous_people">
-            <div id="footer-glass">
+            <img id="img__anonymous_people" src="img/img__anonymous_people.svg" alt="">
+            <div id="footer_glass">
                 <div id="information">
-                    <img src="img/img__logo.svg" alt="" id="img__logo--footer">
-                    <span id="made-by">Made by duyhxm in 2023</span>
+                    <img id="img__logo--footer" src="img/img__logo.svg" alt="">
+                    <span id="author">duyhxm in 2023</span>
                 </div>
-                <div class="social_network">
-                    <ul class="wrapper">
+                <div id="social_network">
+                    <ul id="icons_wrapper">
                         <li class="icon github" id="github">
                           <span class="tooltip">Github</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" id="github"><path opacity="1" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                          <svg id="github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path opacity="1" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
                         </li>
                         <li class="icon youtube" id="youtube">
                           <span class="tooltip">Youtube</span>
