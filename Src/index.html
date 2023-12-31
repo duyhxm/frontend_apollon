@@ -7,14 +7,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            const loaderContainer = document.querySelector('#loader_container');
+            const pageContent = document.querySelector('#page_content');
+            window.addEventListener('beforeunload', function () {
+                pageContent.classList.add('hidden');
+            });
+
+            window.addEventListener('load', function () {
+                setTimeout(function () {
+                    loaderContainer.classList.add('hidden');
+                    pageContent.classList.remove('hidden');
+                }, 3000);
+            });
+        });
+        </script>
     </head>
     <body>
-        <span id="template_text">Contact</span>
+        <div id="loader_container">
+            <p class="loader_container__title">We</p>
+            <div class="effect_container">
+              <p class="text_effect" id="text_effect--template">connect</p>
+              <p class="text_effect text_effect_1">build</p>
+              <p class="text_effect text_effect_2">connect</p>
+              <p class="text_effect text_effect_3">grow</p>
+            </div>
+        </div>
+        <section id="page_content">
+          <span id="template_text">Contact</span>
         <div id="nav_table">
-          <a href="" class="link" id="header_about">About</a>
-          <a href="" class="link" id="header_why">Why</a>
-          <a href="" class="link" id="header_blog">Blog</a>
-          <a href="" class="link" id="header_contact">Contact</a>
+          <a href="#about_us" class="link" id="header_about">About</a>
+          <a href="#why" class="link" id="header_why">Why</a>
+          <a href="#public_letter" class="link" id="header_blog">Blog</a>
+          <a href="#contact" class="link" id="header_contact">Contact</a>
         </div>
         <header>
             <div id="logo_container">
@@ -29,10 +55,10 @@
                 </svg>
             </div>
             <div id="nav_bar">
-                <a href="" class="link" id="header_about">About</a>
-                <a href="" class="link" id="header_why">Why</a>
-                <a href="" class="link" id="header_blog">Blog</a>
-                <a href="" class="link" id="header_contact">Contact</a>
+                <a href="#about_us" class="link" id="header_about">About</a>
+                <a href="#why" class="link" id="header_why">Why</a>
+                <a href="#public_letter" class="link" id="header_blog">Blog</a>
+                <a href="#contact" class="link" id="header_contact">Contact</a>
             </div>
             <div id="button__hamburger">
                 <span class="stick stick--1"></span>
@@ -994,7 +1020,7 @@
                     </div>
                     <div id="button_in_letter">
                         <svg id="button_in_letter__icon_pencil" viewBox="0 0 325 325.37515" xmlns="http://www.w3.org/2000/svg"><path d="m114.6875 284.675781-73.800781-73.800781 178.5-178.5 73.800781 73.800781zm-80.699219-60.800781 67.699219 67.699219-101.5 33.800781zm281.898438-140.300781-12.800781 12.800781-73.898438-73.898438 12.800781-12.800781c12.894531-12.902343 33.804688-12.902343 46.699219 0l27.199219 27.199219c12.800781 12.9375 12.800781 33.765625 0 46.699219zm0 0"/></svg>
-                        <a id="button_in_letter__label" href="">Write</a>
+                        <a id="button_in_letter__label" href="indexForm.html">Write</a>
                     </div>
                 </div>
                 <svg class="letter_section__blob" id="letter_section__blob_1" viewBox="0 0 266 347" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1339,7 +1365,7 @@
                     <h3 class="subtitle">Sharing Heartfelt Words to Illuminate Souls.</h3>
                 </div>
                 <div id="letter_carousel">
-                    <div class="arrow_container">
+                    <div class="arrow_container" id="left_arrow_container">
                         <svg id="icon__left_arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 512.009 512.009" style="enable-background:new 0 0 512.009 512.009;" xml:space="preserve">
                             <g>
@@ -1352,17 +1378,17 @@
                     </div>
                     <div id="cards_wrapper">
                         <div class="card" id="card_1">
-                            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facere quaerat enim veritatis iusto magnam minima ad numquam minus temporibus, magni impedit sapiente consequuntur earum rem inventore sint fuga asperiores ipsa quo illo aspernatur et. Dolore, cum! Asperiores, aperiam in.
+                            <p class="card__text" id="card__text--card_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facere quaerat enim veritatis iusto magnam minima ad numquam minus temporibus, magni impedit sapiente consequuntur earum rem inventore sint fuga asperiores ipsa quo illo aspernatur et. Dolore, cum! Asperiores, aperiam in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quo. Adipisci totam deleniti deserunt dignissimos commodi quisquam aliquam optio vitae ducimus, assumenda quo fugit ex nobis Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias soluta tempora animi accusamus ducimus autem aperiam placeat possimus similique dolorum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione in beatae laborum provident quisquam quos distinctio corporis illum quibusdam voluptate.
                             </p>
                             <div class="button_expand" id="button_expand__card_1">
                               <span class="button_expand__label">Read more</span>
                             </div>
-                            <svg class="icon__quote" id="quote_1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
-                                <path d="M23.2059 46.3144V54.364H43.3165V97.6794H0V54.364H0.00104696V46.3144C0.00104696 29.9687 4.704 17.8313 13.9801 10.2372C20.3969 4.98403 28.5192 2.32056 38.122 2.32056V25.5244C32.9091 25.5244 23.2059 25.5244 23.2059 46.3144ZM94.806 25.5244V2.32056C85.2038 2.32056 77.0815 4.98403 70.6647 10.2372C61.3886 17.8313 56.6851 29.9692 56.6851 46.3144V54.364V97.6794H100V54.364H79.8894V46.3144C79.89 25.5244 89.5932 25.5244 94.806 25.5244Z" fill="black" fill-opacity="0.1"/>
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100" class="icon__quote" id="quote_1">
+                              <path d="M23.2059 46.3144V54.364H43.3165V97.6794H0V54.364H0.00104696V46.3144C0.00104696 29.9687 4.704 17.8313 13.9801 10.2372C20.3969 4.98403 28.5192 2.32056 38.122 2.32056V25.5244C32.9091 25.5244 23.2059 25.5244 23.2059 46.3144ZM94.806 25.5244V2.32056C85.2038 2.32056 77.0815 4.98403 70.6647 10.2372C61.3886 17.8313 56.6851 29.9692 56.6851 46.3144V54.364V97.6794H100V54.364H79.8894V46.3144C79.89 25.5244 89.5932 25.5244 94.806 25.5244Z" fill="black" fill-opacity="0.1"/>
+                          </svg>
                         </div>
                         <div class="card" id="card_2">
-                            <p class="card__text"></p>
+                            <p class="card__text" id="card__text--card_2"></p>
                             <div class="button_expand" id="button_expand__card_2">
                               <span class="button_expand__label">Read more</span>
                             </div>
@@ -1371,7 +1397,7 @@
                             </svg>
                         </div>
                         <div class="card" id="card_3">
-                            <p class="card__text"></p>
+                            <p class="card__text" id="card__text--card_3"></p>
                             <div class="button_expand" id="button_expand__card_3">
                               <span class="button_expand__label">Read more</span>
                             </div>
@@ -1380,7 +1406,7 @@
                             </svg>
                         </div>
                         <div class="card" id="card_4">
-                            <p class="card__text"></p>
+                            <p class="card__text" id="card__text--card_4"></p>
                             <div class="button_expand" id="button_expand__card_4">
                               <span class="button_expand__label">Read more</span>
                             </div>
@@ -1389,7 +1415,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="arrow_container">
+                    <div class="arrow_container" id="right_arrow_container">
                         <svg id="icon__right_arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	                    viewBox="0 0 512.009 512.009" style="enable-background:new 0 0 512.009 512.009;" xml:space="preserve">
 	                        <g>
@@ -1834,7 +1860,7 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <footer id="contact">
             <img id="img__anonymous_people" src="img/img__anonymous_people.svg" alt="">
             <div id="footer_glass">
                 <div id="information">
@@ -1863,6 +1889,226 @@
                 </div>
             </div>
         </footer>
+        </section>
     </body>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script>
+      const lenis = new Lenis();
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add((time)=>{
+        lenis.raf(time * 1000);
+      });
+      gsap.ticker.lagSmoothing(0);
+
+      const letter_section = document.querySelector('#letter_section');
+      const imgReadingLetter = document.querySelector('#img__reading_letter');
+      gsap.set(imgReadingLetter, {
+          xPercent: 100,
+          opacity: 0
+      });
+      gsap.to(imgReadingLetter, {
+        scrollTrigger: {
+          trigger: letter_section,
+          start: 'top 55%',
+          end: 'bottom 90%',
+        },
+        xPercent: 0,
+        opacity: 1
+      });
+
+      const about_us = document.querySelector('#about_us');
+      const about_us_header = document.querySelector('#about_us__header');
+      gsap.set(about_us_header, {
+        xPercent: -50,
+        yPercent: -50,
+        opacity: 0
+      });
+      gsap.to(about_us_header, {
+        scrollTrigger: {
+          trigger: about_us,
+          start: 'top center',
+          end: 'bottom 90%',
+          markers: false,
+        },
+        xPercent: 0,
+        yPercent: 0,
+        opacity: 1
+      });
+      const abu_y = document.querySelector('#img__team_discussion');
+      const abu_z = document.querySelector('#about_us__pr_1');
+      const abu_x = document.querySelector('#img__depressed_woman');
+      const abu_g = document.querySelector("#about_us__pr_2");
+      const l = document.querySelector('#about_us__sub_section');
+      gsap.set(abu_y, {
+        yPercent: 100,
+        opacity: 0
+      });
+      gsap.to(abu_y, {
+        scrollTrigger: {
+          trigger: about_us,
+          start: 'top 30%',
+          end: 'bottom 90%',
+          markers: false,
+        },
+        yPercent: 0,
+        opacity: 1
+      });
+
+      function makeScrollStrigger(element, x, y, opac, trigger, start, end, m, s){
+        gsap.set(element, {
+        xPercent: x,
+        yPercent: y,
+        opacity: opac
+      });
+      let a = start + '%';
+      let b = end + '%';
+      console.log(a, b);
+      gsap.to(element, {
+        scrollTrigger: {
+          trigger: trigger,
+          start: 'top a',
+          end: 'bottom b',
+          markers: m,
+          scrub: s
+        },
+        yPercent: 0,
+        opacity: 1
+      });
+      };
+      makeScrollStrigger(abu_z, 0, 100, 0, about_us, 60, 100, false, false);
+      gsap.set(abu_x, {
+        xPercent: -50,
+        opacity: 0
+      });
+      gsap.to(abu_x, {
+        scrollTrigger: {
+          trigger: l,
+          start: 'top 40%',
+          end: 'bottom 90%',
+        },
+        xPercent: 0,
+        opacity: 1
+      });
+      gsap.set(abu_g, {
+        xPercent: 50,
+        opacity: 0
+      });
+      gsap.to(abu_g, {
+        scrollTrigger: {
+          trigger: l,
+          start: 'top 40%',
+          end: 'bottom 90%',
+        },
+        xPercent: 0,
+        opacity: 1
+      });
+
+      const public_letter = document.querySelector("#public_letter");
+      const public_letter__header = document.querySelector("#public_letter__header");
+      const letter_carousel = document.querySelector("#letter_carousel");
+      gsap.set(public_letter__header, {
+        xPercent: -100,
+        opacity: 0
+      });
+      gsap.to(public_letter__header, {
+        scrollTrigger: {
+          trigger: public_letter,
+          start: 'top 40%',
+          end: 'bottom 90%',
+        },
+        xPercent: 0,
+        opacity: 1
+      });
+      gsap.set(letter_carousel, {
+        yPercent: 100,
+        opacity: 0
+      });
+      gsap.to(letter_carousel, {
+        scrollTrigger: {
+          trigger: public_letter,
+          start: 'top 40%',
+          end: 'bottom 90%',
+        },
+        yPercent: 0,
+        opacity: 1
+      });
+
+      const why = document.querySelector("#why");
+      const why__header = document.querySelector("#why__header");
+      const img__mental_health = document.querySelector("#img__mental_health");
+      const why__pr_1 = document.querySelector("#why__pr_1");
+      gsap.set(why__header, {
+        yPercent: 100,
+        opacity: 0
+      });
+      gsap.to(why__header, {
+        scrollTrigger: {
+          trigger: why,
+          start: 'top 60%',
+          end: 'bottom 90%',
+        },
+        yPercent: 0,
+        opacity: 1
+      });
+      gsap.set(img__mental_health, {
+        xPercent: -100,
+        opacity: 0
+      });
+      gsap.to(img__mental_health, {
+        scrollTrigger: {
+          trigger: why,
+          start: 'top 10%',
+          end: 'bottom 90%',
+        },
+        xPercent: 0,
+        opacity: 1
+      });
+      gsap.set(why__pr_1, {
+        xPercent: 100,
+        opacity: 0
+      });
+      gsap.to(why__pr_1, {
+        scrollTrigger: {
+          trigger: why,
+          start: 'top 10%',
+          end: 'bottom 90%',
+        },
+        xPercent: 0,
+        opacity: 1
+      });
+
+      const subsection_2 = document.querySelector("#subsection_2");
+      const why__pr_2 = document.querySelector("#why__pr_2");
+      gsap.set(why__pr_2, {
+        xPercent: 100,
+        opacity: 0
+      });
+      gsap.to(why__pr_2, {
+        scrollTrigger: {
+          trigger: subsection_2,
+          start: 'top 10%',
+          end: 'bottom 90%',
+        },
+        xPercent: 0,
+        opacity: 1
+      });
+
+      const con = document.querySelector("#contact");
+      const footer_glass = document.querySelector("#footer_glass");
+      gsap.set(footer_glass, {
+        opacity: 0
+      });
+      gsap.to(footer_glass, {
+        scrollTrigger: {
+          trigger: con,
+          start: 'top 50%',
+          end: 'bottom 20%',
+          markers: true,
+        },
+        opacity: 1
+      });
+    </script>
 </html>
